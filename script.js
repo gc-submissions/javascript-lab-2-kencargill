@@ -1,5 +1,5 @@
 const randomDamage = () => {
-    return Math.floor(Math.random( ) * 11);
+    return Math.floor(Math.random( ) * (10-1) + 1);
 }
 
 const chooseOption = (opt1, opt2) => {
@@ -12,7 +12,7 @@ const chooseOption = (opt1, opt2) => {
     return (randNum === 0) ? opt1 : opt2;
 }
 
-const attackPlayer = function(health) {
+function attackPlayer (health) {
     return health - randomDamage();
 }
 
